@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jyothi Sevakula</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jyothi Sevakula</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jyothi Sevakula</h1>
+        <p class="section__text__p2">Cloud Data Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Jyothi_S_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jyothi-sevakula/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/jyothi-2215'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers-1">
+            <a href='./#experience' class="details-link" style="text-decoration: none;">
+                <div class="details-container">
+                    <img
+                      src="./assets/experience.jpg"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>1.5+ years <br />Cloud Data Engineer</p>
+                    
+                        <a href="https://www.micron.com" target="_blank">
+                        <img src="./assets/micron.png" alt="Micron" class="certification-image" style="width:60px;height:30px;"/>
+                        </a>
+                  
+                  </div>
+                  
+            </a>
+            <a href='./#experience' class="details-link" style="text-decoration: none;">
+                
+                  <div class="details-container">
+                    <img
+                      src="./assets/education.png"
+                      alt="Education icon"
+                      class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>Masters Degree <br />Bachelors Of Technology</p>
+                    
+                        <a href="https://www.vt.edu" target="_blank">
+                        <img src="./assets/virginia-tech.png" alt="Virginia Tech" class="certification-image" style="width:45px;height:45 px;"/></a>
+                        <a href="https://www.nitc.ac.in" target="_blank">
+                            <img src="./assets/nitc.png" alt="NIT Calicut" class="certification-image" style="width:26px;height:26px;"/></a>
+                   
+                    </div>
+                  
+          </div>
+        </a>
+            
+            
+            <div class="about-containers-2">
+            <a href='./#certifications' class="details-link" style="text-decoration: none;">
+
+                <div class="details-container">
+                    <img
+                      src="./assets/certifications.png"
+                      alt="Certification icon"
+                      class="icon"
+                    />
+                    <h3>Certifications</h3>
+                        <p>Google Cloud Certified</p>
+                        <p>AWS Certified</p>
+                        
+                            <a href="./assets/data-engineer.png" target="_blank">
+                            <img src="./assets/google.png" alt="Google Cloud Certified" class="certification-image" style="width:26px;height:26px;"/>
+
+                            </a>
+                            <a href="./assets/big-data.png" target="_blank">
+                            <img src="./assets/aws.png" alt="AWS Certified" class="certification-image" style="width:30px;height:30px;"/>
+
+                            </a>
+                        
+                  </div>
+                  </a>
+            <a href='./#interests' class="details-link" style="text-decoration: none;">
+              
+            <div class="details-container">
+
+                <img
+                  src="./assets/passions.png"
+                  alt="Interests icon"
+                  class="icon"
+                />
+                <h3>Interests</h3>
+                <p>Travelling<br />Photography</p>
+                <a href="./assets/kashmir-1.jpeg" target="_blank">
+                    <img src="./assets/kashmir-1.jpeg" alt="Kashmir" class="certification-image" style="width:30px;height:30px ;border-radius: 50%;"/>
+
+                    </a>
+                    <a href="./assets/dubai-1.jpeg" target="_blank">
+                    <img src="./assets/dubai-1.jpeg" alt="Dubai" class="certification-image" style="width:30px;height:30px;border-radius: 50%;"/>
+
+                    </a>
+                </div>
+                </a>
+           </div>
+  
+          
+        </div>
+        
+        
+      </div>
+      <div class="about-me" >
+        <p style="margin-left:40px;">Hey there! I'm a Cloud Data Engineer who's passionate about exploring new places as I am about unraveling data mysteries.  </p>
+    </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+    </br>
+    <p>I am a passionate <b>Cloud Data Engineer</b> currently pursuing my Master’s in <b>Computer and Information Sciences at Virginia Tech</b>, Blacksburg, Virginia, specializing in Computer and Information Sciences. </br></br>With over 1.5 years of professional experience at <b>Micron Technology,</b> I played a pivotal role in developing scalable software solutions that significantly impacted the company's success. I thrive on challenges and have a proven track record of optimizing systems, software development, security, APIs, real-time data pipelines, and other efficient solutions.
+
+    </br></br>My educational journey began at the prestigious <b>National Institute of Technology Calicut</b> in India, where I earned my <b>Bachelor of Technology</b> in <b>Computer Science and Engineering</b>. My areas of interest include Cloud Computing, Machine Learning, and Mathematics.
+        
+        I am committed to giving back to the community in any way possible.</br> </br>I have conducted workshops, mentored students, and volunteered as part of my community initiatives. I am always happy to mentor as well as learn from others.
+        
+        I am always excited to meet new people and make friends. Feel free to drop me a note on LinkedIn, and let's arrange a coffee chat!
+        
+        </p>
+      <!-- <p style="font-size: 18px;">I bring over <b>1.5 years</b> of experience as a <b>Cloud Data Engineer </b>at <b>Micron Technology</b>, specializing in building robust end-to-end data pipelines for optimized operations. Passionate about uncovering actionable insights from data to propel business success. Balancing professional expertise with a personal drive for innovation and growth, I thrive on transforming complex data into tangible business strategies that drive profitability and foster long-term growth.</p> -->
+      </br><p class="title" style="font-size: 20px;"><b>What some cool people say about me!</b></p>
+      <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item active">
+                <img src="./assets/malleswari-rec.png" alt="Photo 1" class="gallery-img" style="width:80%"/>
+                <a href="https://www.linkedin.com/in/naga-malleswari-kodali-5a0aa6171/" target="_blank" style="text-decoration: none;">
+                    <p style="color:blue;">Naga Malleswari Kodali</p>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/poulami-rec.png" alt="Photo 2" class="gallery-img" style="width:80%"/>
+                <a href="https://www.linkedin.com/in/poulami-bala-41976a77/" target="_blank" style="text-decoration: none;">
+                    <p style="color:blue;">Poulami Bala</p>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/Jayanth-rec.png" alt="Photo 3" class="gallery-img" style="width:80%"/>
+                <a href="https://www.linkedin.com/in/jayanth-varma/" target="_blank" style="text-decoration: none;">
+                    <p style="color:blue;">Jayanth Varma Uppalpati</p>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/divya-rec.png" alt="Photo 3" class="gallery-img" style="width:80%"/>
+                <a href="https://www.linkedin.com/in/divya-alimineti/" target="_blank" style="text-decoration: none;">
+                    <p style="color:blue;">Divya Alimineti</p>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/amulya-rec.png" alt="Photo 3" class="gallery-img" style="width:80%"/>
+                <a href="https://www.linkedin.com/in/amulya-billa-7009641a3/" target="_blank" style="text-decoration: none;">
+                    <p style="color:blue;">Amulya Billa</p>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/rohit-rec.png" alt="Photo 3" class="gallery-img" style="width:80%"/>
+                <a href="https://www.linkedin.com/in/rohit-bale-59870a12b/" target="_blank" style="text-decoration: none;">
+                    <p style="color:blue;">Rohit Bale</p>
+                </a>
+            </div>
+        </div>
+        <div class="prev-arrow">&larr;</div>
+        <div class="next-arrow">&rarr;</div>
+    </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Dynamic Book Store Application</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jyothi-2215/JyothiBookstoreReactTransact'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Experimental Operating System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jyothi-2215/eXpOS_Experimental-Operating-System'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Rest Api's -> Lambda+API Gateway</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jyothi-2215/Implementation-RestAPI-Uisng-AWSLambda'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.jpeg"
+                alt="Project 4"
+                class="project-img"
+                style="height: 112px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">X #Counter -> Amazon EMR</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/jyothi-2215/X-Hashtag-Counter-Using-Amazon-EMR'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jyothi2215@vt.edu">jyothi2215@vt.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jyothi-sevakula/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jyothi Sevakula. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
